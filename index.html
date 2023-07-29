@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800');
+    </style>
+    
+    <title>lurbabyXYZ </title>
+</head>
+
+<body class="body">
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        var loader = document.querySelector(".loader-wrapper")
+        window.addEventListener("load",vanish);
+        function vanish(){
+                loader.classList.add("disppear");
+        }
+    </script>
+
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <li><img src="home_button-removebg-preview.png" alt="home" ></li>
+            </a>
+        </div>
+        
+        <div class="hover"><a href="#"><li>About</li></a></div>
+        <div class="hover"><a href="#"><li>Github</li></a></div>
+        <div class="hover"><a href="#"><li>Contact</li></a></div>
+        <div class="hover"><a href="#"><li>Links</li></a></div>
+        
+         
+    </header>
+    <div class="container">
+        <h3><span class="auto-type"></span></h3>
+        
+    </div>
+
+    
+    <div class="js">
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Coder","Creator","Crypto-Enthusiast"],
+            typedSpeed: 1,
+            backSpeed:150,
+            loop: true
+        })
+        </script>
+    </div>
+
+
+</body>
+</html>
