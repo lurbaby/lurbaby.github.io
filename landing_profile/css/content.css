@@ -1,0 +1,66 @@
+#output {
+            
+  color: #ffffff;
+  font-family: "Inconsolata", monospace;
+  /* margin: 0 auto; */
+  /* padding: 0 25%; */
+  /* font-size: 15px; */
+  margin-bottom: 10%;
+  line-height: 0.55em;
+  text-rendering: optimizeSpeed;
+  will-change: contents;
+  white-space: pre;
+  scale: 0.85;
+  background: -webkit-linear-gradient( #00fff2 25%, #e100ff 50%, rgb(14, 255, 6) 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  transform-origin: center; /* Встановлюємо центр масштабування */
+  transition: transform 0.2s; /* Плавна анімація при зміні масштабу */
+  /* z-index: 2; */
+}
+
+
+canvas {
+  display: none;
+}
+
+.zoom_icon {
+  position: absolute;
+  /* margin-top: -25%; */
+  /* padding-top: 20%; */
+  margin-bottom: -33%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  scale:0.05;
+  animation: blink 1.5s infinite alternate; /* Анімація мигання */
+}
+
+@keyframes blink {
+  from { transform: scale(0.75); } /* Початковий масштаб 1 */
+  to { transform: scale(1.2); } /* Масштаб 1.2 під час анімації */
+}
+
+
+.left-side{
+  position: absolute;
+  display: flex;
+  font-size: 25px;
+  margin: 0% 50% 30% 0%;
+  letter-spacing: 2px;
+  z-index: 5;
+}
+.right-side{
+  position: absolute;
+  display: flex;
+  font-size: 25px;
+  margin: 20% 0% 0% 50%;
+  letter-spacing: 2px;
+  z-index: 5;
+}
+.auto-type2 {
+  color: linear-gradient(to right, red, yellow, green);
+  color: #e100ff;
+}
